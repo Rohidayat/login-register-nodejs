@@ -1,0 +1,96 @@
+*, html {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.075);
+    font-family: gill sans, sans-serif;
+}
+
+.bungkus {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.bungkusNilai {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bungkusInput {
+    background-color: rgba(0, 0, 0, 0.075);
+
+    width: 200px;
+    display: flex;
+    padding: 5px;
+}
+
+.inputNilai {
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+
+.inputNilai:focus {
+    outline: none;
+}
+
+.tombolSubmit {
+    background-color: rgba(1,137,187,255);
+    border: none;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+p, a {
+    font-size: small;
+}
+
+a {
+    color: rgba(1,137,187,255);
+    text-decoration: none;
+}
+
+h3 {
+    background-color: rgba(203,32,39,255);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.peringatan {
+    position: absolute;
+    top: 70%;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.merah {
+    color: rgba(203,32,39,255);
+    background-color: rgba(203, 32, 38, 0.4);
+}
+
+.hijau {
+    color: rgba(1,137,187,255);
+    background-color: rgba(1, 137, 187, 0.4);
+}

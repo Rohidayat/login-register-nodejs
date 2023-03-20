@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <div class="bungkus">
+        <h3>ROHID GANTENG</h3>
+        <form action="/autentikasi" method="post">
+            <div class="bungkusNilai">
+                <div class="nilai">
+                    <p class="judul">Email Address</p>
+                    <div class="bungkusInput">
+                        <input class="inputNilai" type="email" name="email" placeholder="example@example.com">
+                    </div>
+                </div>
+                <div class="nilai">
+                    <p class="judul">Password</p>
+                    <div class="bungkusInput">
+                        <input class="inputNilai" type="password" name="password">
+                    </div>
+                </div>
+            </div>
+            <input class="tombolSubmit" type="submit" value="Log In">
+        </form>
+        <div class="tidakPunya">
+            <p>Don't have an account yet?</p>
+            <a href="/register">create an account</a>
+        </div>
+        <% if(notif.length > 0) { %>
+            <%- notif %>
+            <% } %>
+    </div>
+</body>
+</html>
